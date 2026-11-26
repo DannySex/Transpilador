@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transpilador</title>
+</head>
+<body>
+    <h1>Transpilador C# ↔ C++</h1>
+
+    <main>
+        <section class="controladores">
+            <label for="direction">Dirección:</label>
+            <select id="direction">
+                <option value="cs-cpp">C# → C++</option>
+                <option value="cpp-cs">C++ → C#</option>
+            </select>
+        </section>
+
+        <section class="editor">
+            <div class="panel">
+                <label for="input">Código original</label>
+                <textarea id="input" placeholder="Escribe tu código aquí..."></textarea>
+            </div>
+
+            <div class="panel">
+                <label for="output">Código transpilado</label>
+                <textarea id="output" readonly></textarea>
+            </div>
+        </section>
+
+        <section class="actions">
+            <button id="btn-transpilar">Transpilar</button>
+            <button id="btn-limpiar">Limpiar</button>
+            <button id="btn-copiar">Copiar código resultante</button>
+        </section>
+    </main>
+
+    <div id="alert-container"></div>
+</body>
+</html>
